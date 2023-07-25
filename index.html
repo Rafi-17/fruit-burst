@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'btn-color': '#B68C5A',
-                        'text-color': '#707070',
+                        'org-color': '#F85559',
                     }
                 }
             }
@@ -29,21 +28,57 @@
     </script>
     <!-- custon fonts -->
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body class="font-lato">
     <header>
-
+        <nav class="max-w-[1440px] mx-auto lg:bg-org-color rounded-full my-12 px-6 lg:px-12 py-9">
+            <div class="flex justify-around items-center">
+                <div class="hidden md:flex lg:flex-1">
+                    <ul class="hidden lg:flex gap-7 md:px-1 text-white text-lg font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center flex-1">
+                    <img src="./images/logo.png" alt="">
+                    <h2 class="text-xl lg:text-4xl font-bold lg:text-white ml-4">Fruit Burst</h2>
+                </div>
+                <div class="hidden lg:flex">
+                    <input class=" w-[360px] bg-white rounded-full px-7 py-4" type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass relative right-11 top-5"></i>
+                </div>
+                <div>
+                    <div class="navbar-start">
+                        <div class="dropdown relative">
+                            <label tabindex="0" class=" lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-44 absolute top-4 right-0">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                                <li><a><input class="border border-amber-600shadow-lg w-[150px] bg-white rounded-full px-2 py-1" type="text" placeholder="Search here"><i class="fa-solid fa-magnifying-glass relative right-11 top-0"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
